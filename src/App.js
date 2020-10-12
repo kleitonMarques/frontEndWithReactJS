@@ -16,8 +16,8 @@ function App() {
   async function handleAddRepository() {
     const response = await api.post('repositories', {
       title: `Novo repositorio ${Date.now()}`,
-      url: 'http://nodeetals',
-      techs: 'node sim'
+      url: 'http://exemplo',
+      techs: 'exemplo'
     })
 
     const newRepository = response.data
